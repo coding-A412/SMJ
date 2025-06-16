@@ -123,7 +123,7 @@
 </head>
 <body>
   <div class="header">
-    <a class="tg-link" href="[https://t.me/smj_no1](https://www.facebook.com/sheikh.muhammad.639043)" target="_blank" title="Join Telegram">
+    <a class="tg-link" href="https://www.facebook.com/sheikh.muhammad.639043" target="_blank" title="Join Telegram">
       <img class="tg-logo" src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"/>
     </a>
     <div class="web-name">Jakaria Live TV</div>
@@ -142,7 +142,7 @@
       PSG VS ATM <span class="live-dot"></span>
     </div>
     <video controls autoplay>
-      <source src="https://live-stream.iblups.com/video/68fccd3c75e206b5a341d181308a4c130a2de6bd.m3u8" type="application/x-mpegURL">
+      <source src="https://nohddaezronnaz.sbs/automatically/1" type="application/x-mpegURL">
       Your browser does not support the video tag.
     </video>
   </div>
