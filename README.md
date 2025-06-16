@@ -123,7 +123,7 @@
 </head>
 <body>
   <div class="header">
-    <a class="tg-link" href="https://t.me/smj_no1" target="_blank" title="Join Telegram">
+    <a class="tg-link" href="[https://t.me/smj_no1](https://www.facebook.com/sheikh.muhammad.639043)" target="_blank" title="Join Telegram">
       <img class="tg-logo" src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"/>
     </a>
     <div class="web-name">Jakaria Live TV</div>
