@@ -1,129 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Sport's by Jakaria</title>
-  <style>
-    body {
-      background: #181818;
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    .header {
-      background: #000;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 14px 18px;
-    }
-    .header-left {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .logo-link {
-      display: inline-block;
-    }
-    .logo-img {
-      width: 32px;
-      height: 32px;
-      background: #fff;
-      border-radius: 50%;
-      padding: 3px;
-      margin-right: 2px;
-      box-shadow: 0 1px 4px #0003;
-    }
-    .site-name {
-      color: #14b800;
-      font-size: 1.5em;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-    .owner {
-      background: #fff;
-      color: #000;
-      border-radius: 8px;
-      padding: 7px 18px;
-      font-weight: bold;
-      font-size: 1em;
-      border: 2px solid #14b800;
-      transition: background 0.2s, color 0.2s;
-    }
-    .owner span {
-      color: #14b800;
-    }
-    .owner:hover {
-      background: #14b800;
-      color: #fff;
-    }
-    .content {
-      max-width: 430px;
-      margin: 32px auto 0 auto;
-      background: #232323;
-      border-radius: 14px;
-      box-shadow: 0 6px 30px #0005;
-      padding: 25px 12px 30px 12px;
-      text-align: center;
-    }
-    .subtitle {
-      color: #00eaff;
-      font-size: 1.1em;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-    .desc {
-      color: #fff;
-      margin-bottom: 18px;
-      font-size: 1.05em;
-    }
-    .servers {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin: 18px 0;
-    }
-    .server-link {
-      background: #14b800;
-      color: #fff;
-      padding: 10px 0;
-      border-radius: 7px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.08em;
-      transition: background 0.2s;
-      box-shadow: 0 2px 8px #0002;
-    }
-    .server-link:hover {
-      background: #0e8600;
-    }
-    @media (max-width: 500px) {
-      .content { max-width: 98vw; }
-      .site-name { font-size: 1.1em; }
-    }
-  </style>
+  <title>Jakaria Live TV</title>
+  <style>
+    /* আগের সব CSS ঠিকই আছে, শুধু নিচে নতুন বাটনের জন্য একটু স্টাইল */
+    .server-btns {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .server-btn {
+      background: #ff69b4;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 7px 18px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 2px 8px #ff69b488;
+      transition: background 0.2s;
+    }
+    .server-btn.active, .server-btn:hover {
+      background: #ff1744;
+    }
+  </style>
 </head>
 <body>
-  <div class="header">
-    <div class="header-left">
-      <a class="logo-link" href="https://t.me/sylhetystream" target="_blank">
-        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
-      </a>
-      <a class="logo-link" href="https://facebook.com" target="_blank">
-        <img class="logo-img" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-      </a>
-      <span class="site-name">Sport's by Jakaria</span>
-    </div>
-    <div class="owner">owner by <span>Jakaria</span></div>
-  </div>
-  <div class="content">
-    <div class="subtitle">Football & Cricket Live</div>
-    <div class="desc">সম্পূর্ণ খেলা দেখুন ফ্রীতে</div>
-    <div class="servers">
-      <a class="server-link" href="https://edge3-moblive.yuppcdn.net/drm/smil:tencricketdrm.smil/index.m3u8" target="_blank">Server 1</a>
-      <a class="server-link" href="https://edge3-moblive.yuppcdn.net/drm/smil:tencricketdrm.smil/index.m3u8" target="_blank">Server 2</a>
-      <a class="server-link" href="https://live-stream.iblups.com/video/68fccd3c75e206b5a341d181308a4c130a2de6bd.m3u8" target="_blank">Server 3</a>
-      <a class="server-link" href="https://dai.google.com/linear/hls/event/HynNobMPSu6nQCgpxsK0lQ/master.m3u8" target="_blank">Server 4
+  <div class="header">
+    <a class="tg-link" href="https://www.facebook.com/sheikh.muhammad.639043" target="_blank" title="Join Telegram">
+      <img class="tg-logo" src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"/>
+    </a>
+    <div class="web-name">Jakaria Live TV</div>
+    <div class="owner">Owner Jakaria</div>
+  </div>
+
+  <div class="section-title">Football Live</div>
+
+  <div class="channel-box">
+    <div class="circles">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+    <div class="channel-title">
+      PSG VS ATM <span class="live-dot"></span>
+    </div>
+    <div class="server-btns">
+      <button class="server-btn active" onclick="changeServer(1)">Server 1</button>
+      <button class="server-btn" onclick="changeServer(2)">Server 2</button>
+      <button class="server-btn" onclick="changeServer(3)">Server 3</button>
+      <button class="server-btn" onclick="changeServer(4)">Server 4</button>
+    </div>
+    <video id="liveVideo" controls autoplay>
+      <source src="https://nohddaezronnaz.sbs/automatically/1" type="application/x-mpegURL">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <script>
+    const servers = [
+      "https://nohddaezronnaz.sbs/automatically/1",
+      "https://edge3-moblive.yuppcdn.net/drm/smil:tencricketdrm.smil/index.m3u8",
+      "https://live-stream.iblups.com/video/68fccd3c75e206b5a341d181308a4c130a2de6bd.m3u8",
+      "https://dai.google.com/linear/hls/event/HynNobMPSu6nQCgpxsK0lQ/master.m3u8"
+    ];
+    function changeServer(idx) {
+      const video = document.getElementById('liveVideo');
+      video.src = servers[idx - 1];
+      video.load();
+      video.play();
+      document.querySelectorAll('.server-btn').forEach((btn, i) => {
+        btn.classList.toggle('active', i === idx - 1);
+      });
+    }
+  </script>
+</body>
+</html>
 <html>
 <head>
   <title>Jakaria Live TV</title>
