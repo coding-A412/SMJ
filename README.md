@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Jakaria Live TV</title>
+  <title>Jakaria's Sports</title>
   <style>
     /* আগের সব CSS ঠিকই আছে, শুধু নিচে নতুন বাটনের জন্য একটু স্টাইল */
     .server-btns {
@@ -35,7 +35,7 @@
     <div class="owner">Owner Jakaria</div>
   </div>
 
-  <div class="section-title">Football Live</div>
+  <div class="section-title">Football And Cricket Live</div>
 
   <div class="channel-box">
     <div class="circles">
@@ -44,7 +44,7 @@
       <div class="circle"></div>
     </div>
     <div class="channel-title">
-      PSG VS ATM <span class="live-dot"></span>
+      BD Vs SL <span class="live-dot"></span>
     </div>
     <div class="server-btns">
       <button class="server-btn active" onclick="changeServer(1)">Server 1</button>
@@ -62,7 +62,7 @@
       "https://nohddaezronnaz.sbs/automatically/1",
       "https://edge3-moblive.yuppcdn.net/drm/smil:tencricketdrm.smil/index.m3u8",
       "https://live-stream.iblups.com/video/68fccd3c75e206b5a341d181308a4c130a2de6bd.m3u8",
-      "https://dai.google.com/linear/hls/event/HynNobMPSu6nQCgpxsK0lQ/master.m3u8"
+      "https://sliv.fredflix.fun/sony_ten2hd/playlist.m3u8?hdnts=URLPrefix%3DaHR0cHM6Ly9zbGl2LmZyZWRmbGl4LmZ1bg%3D%3D%7EExpires%3D1750157983000%7Ehmac%3D320403a44be54e6a066e97375dc65f0ecc33f417a13995558fb443f6030427c5"
     ];
     function changeServer(idx) {
       const video = document.getElementById('liveVideo');
