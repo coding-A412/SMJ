@@ -59,10 +59,10 @@
   </div>
   <script>
     const servers = [
-      "https://nohddaezronnaz.sbs/automatically/1",
+      "https://x4-cdnnew.newkso.ru/x4-cdn/mono30/mono.m3u8",
       "https://edge3-moblive.yuppcdn.net/drm/smil:tencricketdrm.smil/index.m3u8",
       "https://live-stream.iblups.com/video/68fccd3c75e206b5a341d181308a4c130a2de6bd.m3u8",
-      "https://nijineh-lalajo.hf.space/proxy?url=https://nfsnew.newkso.ru/nfs/premium31/mono.m3u8"
+      "https://abcc.yallashooot.store:8181/action/index.m3u8"
     ];
     function changeServer(idx) {
       const video = document.getElementById('liveVideo');
