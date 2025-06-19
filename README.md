@@ -44,7 +44,7 @@
       <div class="circle"></div>
     </div>
     <div class="channel-title">
-      BD Vs SL <span class="live-dot"></span>
+      Live Sports <span class="live-dot"></span>
     </div>
     <div class="server-btns">
       <button class="server-btn active" onclick="changeServer(1)">Server 1</button>
@@ -61,7 +61,7 @@
     const servers = [
       "https://x4-cdnnew.newkso.ru/x4-cdn/mono30/mono.m3u8",
       "https://edge3-moblive.yuppcdn.net/drm/smil:tencricketdrm.smil/index.m3u8",
-      "https://live-stream.iblups.com/video/68fccd3c75e206b5a341d181308a4c130a2de6bd.m3u8",
+      "https://d3o3cim6uzorb4.cloudfront.net/out/v1/f683685242b549f48ea8a5171e3e993a/index_1.m3u8",
       "https://abcc.yallashooot.store:8181/action/index.m3u8"
     ];
     function changeServer(idx) {
