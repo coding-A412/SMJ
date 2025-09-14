@@ -103,43 +103,7 @@
     <button data-src="https://edge3-moblive.yuppcdn.net/drm/smil:tencricketdrm.smil/index.m3u8">Server 2</button>
     <button data-src="https://alibabacdn2.tamashaweb.com/alibaba02/alibaba02stream_720p.m3u8">Server 3</button>
     <button data-src="https://af.ayassport.ir/hls2/ssc1.m3u8">Server 4</button>
-  </div>
 
-  <div class="owner-text">
-    Sheikh Muhammad
-  </div>
-</main>
-
-<footer>
-  Owner Jakaria
-</footer>
-
-<script>
-const player = document.getElementById('player');
-const buttons = document.querySelectorAll('.server-buttons button');
-
-function setSource(src) {
-  while (player.firstChild) player.removeChild(player.firstChild);
-  const source = document.createElement('source');
-  source.src = src;
-  source.type = 'application/x-mpegURL';
-  player.appendChild(source);
-  player.load();
-  player.play().catch(e => console.log(e));
-}
-
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    setSource(button.getAttribute('data-src'));
-  });
-});
-
-// পেজ লোড হওয়ার সাথে সাথে প্রথম সার্ভার চালাবে
-setSource(buttons.getAttribute('data-src'));
-</script>
-
-</body>
-</html>
 
 
 
