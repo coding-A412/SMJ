@@ -44,7 +44,7 @@
       <div class="circle"></div>
     </div>
     <div class="channel-title">
-      Live Sports <span class="live-dot"></span>
+      Live Sports International <span class="live-dot"></span>
     </div>
     <div class="server-btns">
       <button class="server-btn active" onclick="changeServer(1)">Server 1</button>
