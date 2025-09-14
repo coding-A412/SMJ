@@ -218,7 +218,7 @@
       PSG VS ATM <span class="live-dot"></span>
     </div>
     <video controls autoplay>
-      <source src="https://nohddaezronnaz.sbs/automatically/1" type="application/x-mpegURL">
+      <source src="http://103.73.107.122:3255/TSportsHD/tracks-v1a1/mono.m3u8" type="application/x-mpegURL">
       Your browser does not support the video tag.
     </video>
   </div>
