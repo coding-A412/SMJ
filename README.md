@@ -93,7 +93,7 @@
         <button class="server-button" onclick="changeSource('https://sportstvnow.org/1111.m3u8')">Server 3</button>
         <button class="server-button" onclick="changeSource('https://af.ayassport.ir/hls2/ssc1.m3u8')">Server 4</button>
         <button class="server-button" onclick="changeSource('https://live20.bozztv.com/akamaissh101/ssh101/starsports/chunks.m3u8')">Server 5</button>
-        <button class="server-button" onclick="changeSource('http://tv.bdiptv.store:80/live/restreauuX58y/refstream/218.m3u8')">Server 6</button>
+        <button class="server-button" onclick="changeSource('https://tataplay.slivcdn.com/hls/live/2011747/TEN1HD/master_900.m3u8')">Server 6</button>
         <button class="server-button" onclick="changeSource('https://storage.googleapis.com/overtrongher1/mux_video_ts/index-1.m3u8')">Server 7</button>
     </div>
 
