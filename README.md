@@ -141,3 +141,131 @@ setSource(buttons.getAttribute('data-src'));
 </body>
 </html>
 
+
+
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jakaria Web Tv</title>
+
+  <!-- Video.js CSS -->
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background-color: pink;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: black;
+    }
+
+    .social-icons a {
+      margin-left: 10px;
+      color: black;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .player-container {
+      margin: 20px auto;
+      max-width: 720px;
+    }
+
+    .server-buttons {
+      margin: 20px 0;
+    }
+
+    .server-buttons button {
+      margin: 5px;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #444;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .server-buttons button:hover {
+      background-color: #888;
+    }
+
+    footer {
+      background: linear-gradient(to right, red, black);
+      padding: 15px;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jakaria Web Tv</h1>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/sheikh.muhammad.639043" target="_blank" title="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.facebook.com/sheikh.muhammad.639043" target="_blank" title="Telegram">
+        <i class="fab fa-telegram"></i>
+      </a>
+    </div>
+  </header>
+
+  <div class="player-container">
+    <video id="videoPlayer" class="video-js vjs-default-skin" controls preload="auto" width="720" height="400">
+      <source src="" type="application/x-mpegURL">
+    </video>
+  </div>
+
+  <div class="server-buttons">
+    <button onclick="changeStream('https://cloudfrontnet.vercel.app/tplay/playout/209617/master.m3u8')">Server 1</button>
+    <button onclick="changeStream('https://edge3-moblive.yuppcdn.net/drm/smil:tencricketdrm.smil/index.m3u8')">Server 2</button>
+    <button onclick="changeStream('https://alibabacdn2.tamashaweb.com/alibaba02/alibaba02stream_720p.m3u8')">Server 3</button>
+    <button onclick="changeStream('https://af.ayassport.ir/hls2/ssc1.m3u8')">Server 4</button>
+    <button onclick="changeStream('https://alibabacdn2.tamashaweb.com/alibaba02/alibaba02stream_1080p.m3u8')">Server 5</button>
+    <button onclick="changeStream('http://tv.bdiptv.store:80/live/restreauuX58y/refstream/218.m3u8')">Server 6</button>
+    <button onclick="changeStream('https://storage.googleapis.com/overtrongher1/mux_video_ts/index-1.m3u8')">Server 7</button>
+  </div>
+
+  <footer>
+    owner Jakaria
+  </footer>
+
+  <!-- Video.js JS -->
+  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+
+  <script>
+    var player = videojs('videoPlayer');
+
+    function changeStream(url) {
+      player.src({ src: url, type: 'application/x-mpegURL' });
+      player.play();
+    }
+  </script>
+
+</body>
+</html>
