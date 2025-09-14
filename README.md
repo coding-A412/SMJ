@@ -101,7 +101,7 @@
   <div class="server-buttons">
     <button data-src="https://cloudfrontnet.vercel.app/tplay/playout/209617/master.m3u8">Waz Bd</button>
     <button data-src="https://edge3-moblive.yuppcdn.net/drm/smil:tencricketdrm.smil/index.m3u8">Server 2</button>
-    <button data-src="https://alibabacdn2.tamashaweb.com/alibaba02/alibaba02stream_720p.m3u8">Server 3</button>
+    <button data-src="https://tataplay.slivcdn.com/hls/live/2020591/TEN3HD/master_900.m3u8">Server 3</button>
     <button data-src="https://af.ayassport.ir/hls2/ssc1.m3u8">Server 4</button>
 
 
