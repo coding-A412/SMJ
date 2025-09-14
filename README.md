@@ -59,7 +59,7 @@
   </div>
   <script>
     const servers = [
-      "https://live-stream.iblups.com/video/68fccd3c75e206b5a341d181308a4c130a2de6bd.m3u8",
+      "http://103.73.107.122:3255/TSportsHD/tracks-v1a1/mono.m3u8",
       "https://edge3-moblive.yuppcdn.net/drm/smil:tencricketdrm.smil/index.m3u8",
       "http://103.15.140.138/tsports/index.m3u8",
       "http://103.73.107.122:3255/TSportsHD/tracks-v1a1/mono.m3u8",
