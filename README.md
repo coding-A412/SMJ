@@ -98,7 +98,7 @@
     </div>
 
     <footer>
-        <p class="footer-text">Server 1 এ সব সময় ওয়াজ চলবে</p>
+        <p class="footer-text">Server 1 এ সব সময় ওয়াজ চলবে  OwneR : JakariA</p>
     </footer>
 
     <script>
