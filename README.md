@@ -2,112 +2,107 @@
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jakaria Web TV</title>
+    <title>Jakaria's Creation</title>
     <style>
         body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
         }
+
         header {
-            background-color: pink;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        .social-links {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-        }
-        .social-links a {
-            margin: 0 10px;
-        }
-        .social-links img {
-            width: 30px;
-            height: 30px;
-        }
-        .player-container {
+            background-color: #006400; /* গাঢ় সবুজ */
+            color: white;
             display: flex;
-            justify-content: center;
-            padding: 20px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
         }
-        .server-button {
-            background-color: #ff4081;
-            border: none;
-            color: white;
-            padding: 15px;
-            margin: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s;
+
+        .site-title {
+            font-size: 32px;
+            font-family: 'Courier New', Courier, monospace;
+            letter-spacing: 1px;
         }
-        .server-button:hover {
-            background-color: #f50057;
+
+        .imo-logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: transform 0.3s;
         }
-        .player {
-            width: 80%;
-            height: 500px;
-            background-color: black;
-            margin-bottom: 20px;
+
+        .imo-logo img:hover {
+            transform: scale(1.1);
         }
-        footer {
-            background-color: red;
-            text-align: center;
+
+        marquee {
+            font-size: 24px;
+            font-weight: bold;
+            color: #b30000;
+            margin: 20px auto;
+            background-color: #eaffea;
             padding: 10px;
-            color: white;
+            border: 2px dashed #008000;
+            width: 90%;
+            border-radius: 8px;
         }
-        .footer-text {
-            margin: 0;
+
+        video {
+            width: 80%;
+            max-width: 800px;
+            height: auto;
+            border: 4px solid #006400;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 100, 0, 0.4);
+        }
+
+        .footer-note {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #333;
+            background-color: #e0ffe0;
+            padding: 15px 20px;
+            border-top: 2px solid #006400;
+            font-style: italic;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
+
+    <!-- হেডার -->
     <header>
-        <h1>Jakaria Web TV</h1>
-        <div class="social-links">
-            <a href="https://www.facebook.com/sheikh.muhammad.639043" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-            </a>
-            <a href="https://www.facebook.com/sheikh.muhammad.639043" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Telegram_2019_Logo.svg" alt="Telegram">
+        <div class="site-title">Jakaria's Creation</div>
+        <div class="imo-logo">
+            <a href="https://imo.im/imoid_WahwtjeqUj" target="_blank" title="যোগাযোগ করুন imo তে">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Imo_Logo.png" alt="imo logo">
             </a>
         </div>
     </header>
 
-    <div class="player-container">
-        <video id="videoPlayer" class="player" controls>
-            <source src="https://cloudfrontnet.vercel.app/tplay/playout/209617/master.m3u8" type="application/x-mpegURL">
-            Your browser does not support the video tag.
-        </video>
+    <!-- চলমান লেখা -->
+    <marquee behavior="scroll" direction="left">
+        ওয়াজ শুনুন, আমল করুন, আল্লাহর পথে চলুন, অন্যকে শেয়ার করুন
+    </marquee>
+
+    <!-- ভিডিও প্লেয়ার -->
+    <video controls autoplay>
+        <source src="https://cloudfrontnet.vercel.app/tplay/playout/209617/master.m3u8" type="application/x-mpegURL">
+        আপনার ব্রাউজার এই ভিডিও প্লে করতে পারছে না।
+    </video>
+
+    <!-- ফুটার লেখা -->
+    <div class="footer-note">
+        সকলের কাছে দোয়া চাই OwnerJakaria
     </div>
 
-    <div class="buttons-container" style="text-align: center;">
-        <button class="server-button" onclick="changeSource('https://cloudfrontnet.vercel.app/tplay/playout/209617/master.m3u8')">Server 1</button>
-        <button class="server-button" onclick="changeSource('https://edge3-moblive.yuppcdn.net/drm/smil:tencricketdrm.smil/index.m3u8')">Server 2</button>
-        <button class="server-button" onclick="changeSource('https://sportstvnow.org/1111.m3u8')">Server 3</button>
-        <button class="server-button" onclick="changeSource('https://af.ayassport.ir/hls2/ssc1.m3u8')">Server 4</button>
-        <button class="server-button" onclick="changeSource('https://live20.bozztv.com/akamaissh101/ssh101/starsports/chunks.m3u8')">Server 5</button>
-        <button class="server-button" onclick="changeSource('https://alibabacdn2.tamashaweb.com/alibaba02/alibaba02stream_720p.m3u8')">Server 6</button>
-        <button class="server-button" onclick="changeSource('https://storage.googleapis.com/overtrongher1/mux_video_ts/index-1.m3u8')">Server 7</button>
-    </div>
-
-    <footer>
-        <p class="footer-text">Server 1 এ সব সময় ওয়াজ চলবে  OwneR : JakariA</p>
-    </footer>
-
-    <script>
-        function changeSource(url) {
-            var videoPlayer = document.getElementById('videoPlayer');
-            videoPlayer.src = url;
-            videoPlayer.load();
-            videoPlayer.play();
-        }
-    </script>
 </body>
 </html>
